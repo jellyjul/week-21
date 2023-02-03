@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Опросник для обладетей кошечек</h1>
+    <form onsubmit="return false" id="formElem">
+      <div>
+        <fieldset>
+          <legend>
+            <h2>Основные данные</h2>
+          </legend>
+          <div>
+            <label for="name"> Кличка питомца </label>
+            <input type="text" id="name" name="pet-name" required />
+          </div>
+          <div>
+            <label for="owner"> Имя владельца </label>
+            <input
+              type="text"
+              id="owner"
+              placeholder="Напиши свое имя"
+              name="owner-name"
+              required
+            />
+          </div>
+          <div>
+            <label for="tel"> Контакты владельца </label>
+            <input
+              type="tel"
+              id="tel"
+              minlength="10"
+              maxlength="20"
+              name="tel"
+            />
+          </div>
+        </fieldset>
+      </div>
+      <div>
+        Порода питомца
+        <select id="selectCat" name="type-of-cat">
+          <option value="Метис">Метис</option>
+          <option value="Мекун">Мей кун</option>
+          <option value="Шотландец">Шотландец</option>
+        </select>
+      </div>
+      <div>
+        Чем питается?
+        <div id="food">
+          <input type="checkbox" value="Сухой корм" name="food" id="" /> Сухой
+          корм <input type="checkbox" value="Влажный корм" name="food" />Влажный
+          корм
+          <input type="checkbox" value="Натуральный корм" name="food" id="" />
+          Натуральный корм
+        </div>
+      </div>
+      <div id="sex">
+        Пол питомца
+        <input type="radio" name="sex" id="girl" value="Самка" />Самка
+        <input type="radio" name="sex" id="boy" value="Самец" />Самец
+      </div>
+      <div>
+        <label for="comment"> Комментарий </label>
+        <textarea rows="10" cols="35" id="comment" name="comment"></textarea>
+      </div>
+      <div>
+        <label for="photo">Можете добавить фотографию питомца</label>
+        <input type="file" id="photo" />
+      </div>
+      <div>
+        <input class="submit" type="submit" value="Сохранить" />
+      </div>
+    </form>
+    <script src="./2.js"></script>
+  </body>
+</html>

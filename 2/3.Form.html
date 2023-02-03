@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+<div class="wrapper">
+    <div class="registration-form">
+      <form name="form" method="post" onsubmit="return false">
+        <div class="registration-form__wrapper" >
+          <h3>Регистрация</h3>
+          <div class="registration-form__name-surname">
+            <fieldset class="registration-form__fieldset-name" >
+              <legend>Имя</legend>
+              <div class="registration-form__name">
+                <input class="name" type="text" name="name" id="name" placeholder="Имя">
+              </div>
+            </fieldset>
+            <div id="name__result"></div>
+            <fieldset>
+              <legend>Фамилия</legend>
+            <div class="registration-form__surname">
+              <input type="text" name="surname" id="surname"  placeholder="Фамилия"/>
+            </div>
+          </fieldset>
+          <div id="surname__result"></div>
+        </div>
+          <fieldset class="registration-form__fieldset-email">
+              <legend>E-mail</legend>
+            <div class="registration-form__email">
+              <input type="email" name="email" id="email" placeholder="abs@mail.ru" />
+            </div>
+          </fieldset>
+          <div id="email__result"></div>
+          <fieldset>
+              <legend>Телефон</legend>
+            <div class="registration-form__number">
+              <input type="number" name="number" id="number" placeholder="+79273331319"/>
+            </div>
+            </fieldset>
+            <div id="number__result"></div>
+            <fieldset >
+              <legend>Страна</legend>
+              <div class="registration-form__country" id="country">
+              <select id="select">
+                <option selected="" value="Default">Пожалуйста выберите страну</option>
+                <option>Россия</option>
+                <option>США</option>
+                <option>Португалия</option>
+                <option>Англия</option>
+                </select>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Пароль</legend>
+            <div class="registration-form__password">
+              <input type="password" name="password" id="password"  placeholder="Пароль"/>
+            </div>
+          </fieldset>
+            <input type="checkbox" id="checkbox">Получать новости
+            <div id="checkbox__result"></div>
+            <div class="registration-form__submit">
+              <input type="submit" name="submit" value="Подтвердить" id="submit" class="submit"/>
+            </div>
+          </form>
+        </div>
+</div>
+        <script src="./3.Form.js">
+        </script>
+</body>
+</html>
