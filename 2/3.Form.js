@@ -120,3 +120,18 @@ button.addEventListener('click', (event) => {
     event.preventDefault();
     formValidation()
   })
+
+
+
+
+/// ошибки
+const isOnline = window.navigator.onLine;
+console.log(isOnline)
+try {
+    isOnline === true ;
+    console.log('You are online');
+    }
+catch (err) {
+    console.log(err.name);
+    alert('You are offline')
+}
